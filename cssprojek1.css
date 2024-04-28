@@ -71,7 +71,7 @@ nav .pertemuan {
       list-style-type: none;
       padding-top: 50px ;
       position:absolute;
-      right: -100%;
+      right: -200%;
       top: 0%;
       width: 25rem;
       background-color: rgb(162, 162, 254) ;
@@ -173,7 +173,5 @@ main .deskripsi .container-deskripsi .container-button{
             height: 250px;
             width: 150px;
       }
-      .navbar-center li   {
-           padding-left: 20px;
-      }
+     
 }
