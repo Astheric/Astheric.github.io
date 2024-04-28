@@ -105,7 +105,7 @@ main {
       display: flex;
       justify-content: space-between;
       height: 100vh;
-      background-image: url(gambar/unpamhp.jpeg);
+      background-image: url(unpamhp.jpeg);
       background-position: center;
       background-repeat: no-repeat;
       background-size: cover;
