@@ -1,0 +1,179 @@
+*{
+      margin: 0;
+      padding: 0;
+      font-family: Arial, Helvetica, sans-serif;
+   
+}
+
+body  {
+      background-color: aliceblue;
+}
+
+nav {
+      
+      display: flex;
+      justify-content: space-between;
+      background-color: rgb(162, 162, 254);
+      padding: 10px 15px 10px 15px;
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      
+}
+
+.kirinav {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: rgb(75, 191, 170);
+      font-weight: bold;
+}
+
+.gambar {
+      height: 25px;
+      width: 25px;
+      border-radius: 25px;
+
+}
+
+.portfolio {
+      padding-left: 10px;
+}
+
+nav > .navbar-center {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      list-style-type: none;
+      width: 20%;
+      
+}
+
+nav >ul > li {
+      text-align: center;
+      
+      
+}
+
+nav ul li a {
+      text-decoration: none;
+      color: gray;
+      font-weight: bold;
+      text-shadow: 1px 1px 0 gray ; 
+}
+
+
+nav .pertemuan {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      list-style-type: none;
+      padding-top: 50px ;
+      position:absolute;
+      right: -100%;
+      top: 0%;
+      width: 25rem;
+      background-color: rgb(162, 162, 254) ;
+      z-index: -1;
+      transition: 0.5s;
+}
+
+nav .pertemuan li {
+      padding: 10px;
+}
+
+nav .pertemuan.active   {
+      right: 0;
+}
+
+nav .pertemuan::after   {
+      transform: scaleX(0.2);
+}
+
+nav .icon-navbar a:hover{
+      color: whitesmoke;
+      transition: all 0.5s ease-in-out;
+}
+
+nav ul li a:hover {
+      color: whitesmoke;
+      transition: all 0.5s ease-in-out;
+}
+
+main {
+      display: flex;
+      justify-content: space-between;
+      height: 100vh;
+      background-image: url(gambar/unpamhp.jpeg);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      
+}
+
+
+main > section {
+      width: 50vw;
+}
+
+main .deskripsi {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      
+}
+
+main .deskripsi .container-deskripsi {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      width: 60%;
+      height: 60%;
+      
+}
+
+main .deskripsi .container-deskripsi h1   {
+      text-shadow: 1px 1px 0 rgb(61, 57, 57) ;
+}
+
+main .deskripsi .container-deskripsi .container-button{
+      
+      display: flex;
+      justify-content: center;
+      align-items: center;
+}
+
+.gambar-section {
+      display: flex;
+      text-align: center;
+      justify-content: center;
+      align-items: center;
+}
+
+
+.container-gambar {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 60%;
+      height: 60%;
+      
+      
+}
+
+.foto-kanan  {
+      height: 100%;
+      width: 100%;
+      border-radius: 100%;
+}
+
+@media (max-width:450px) {
+      .foto-kanan {
+            height: 250px;
+            width: 150px;
+      }
+      .navbar-center li   {
+           padding-left: 20px;
+      }
+}
